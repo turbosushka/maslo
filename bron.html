@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бронь · МАСЛО</title>
+<meta name="description" content="Забронировать стол в МАСЛО. Точка, дата, гости, перезвоним за десять минут.">
+<meta name="theme-color" content="#F7EFE3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D98A2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F7EFE3' font-family='Georgia'%3EМ%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/OrelegaOne-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="has-mbar">
+
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="МАСЛО, на главную">МАСЛ<b>О</b></a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  </nav>
+  <a class="btn" href="bron.html">Забронировать стол</a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+</header>
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  <p class="muted">Каждый день с 9 до 23 · +7 900 000-00-00</p>
+</nav>
+
+<main>
+<section class="page-head">
+  <div class="wrap ph-row">
+    <div><p class="kicker" data-rv>Бронь</p><h1 class="d1" data-rv="1">Стол ждёт</h1></div>
+    <p class="lead" data-rv="2">Заполните форму, перезвоним за десять минут. Если опаздываете, стол подождёт четверть часа.</p>
+  </div>
+</section>
+<div class="wrap bron">
+  <form class="form" id="bronForm" novalidate data-rv>
+    <div class="f-grid">
+      <fieldset class="f-full" style="border:0;padding:0;margin:0">
+        <legend class="f-lab">Точка</legend>
+        <div class="pick">
+          <label><input type="radio" name="place" value="sadovaya" checked><span>Садовая</span></label>
+          <label><input type="radio" name="place" value="lipovaya"><span>Липовая</span></label>
+          <label><input type="radio" name="place" value="naberezhnaya"><span>Набережная</span></label>
+          <label><input type="radio" name="place" value="liteyny"><span>Литейный</span></label>
+        </div>
+      </fieldset>
+      <div><label class="f-lab" for="date">Дата</label><input class="f-in" type="date" id="date" name="date" required></div>
+      <div><label class="f-lab" for="time">Время</label>
+        <select class="f-in" id="time" name="time" required>
+          <option>09:00</option><option>12:00</option><option>13:30</option><option>15:00</option><option>18:00</option><option selected>19:30</option><option>21:00</option><option>22:00</option>
+        </select></div>
+      <div class="f-full"><span class="f-lab" id="gLab">Гостей</span>
+        <div class="guests" role="group" aria-labelledby="gLab">
+          <button type="button" data-g="-1" aria-label="Меньше гостей">−</button>
+          <output id="guestsOut" aria-live="polite">2</output>
+          <button type="button" data-g="1" aria-label="Больше гостей">+</button>
+          <input type="hidden" id="guests" name="guests" value="2">
+        </div></div>
+      <div><label class="f-lab" for="name">Имя</label><input class="f-in" id="name" name="name" autocomplete="given-name" required placeholder="Как к вам обращаться"></div>
+      <div><label class="f-lab" for="phone">Телефон</label><input class="f-in" id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[\d\s()+\-]{10,}" placeholder="+7 900 000-00-00"></div>
+      <div class="f-full"><label class="f-lab" for="note">Пожелания</label><input class="f-in" id="note" name="note" placeholder="День рождения, детский стул, у окна"></div>
+    </div>
+    <button class="btn" type="submit">Забронировать стол</button>
+    <p class="f-small">Это демо, заявка никуда не уходит.</p>
+    <div class="thanks" id="thanks" aria-hidden="true" role="status">
+      <span class="hand">готово!</span>
+      <h2 class="d2">Спасибо, <span id="tName">друг</span></h2>
+      <p id="tInfo"></p>
+      <p>Перезвоним в течение десяти минут и подтвердим стол. Масло уже греется.</p>
+      <button class="btn btn--ghost" type="button" id="again" style="width:auto;margin-top:10px">Ещё одна бронь</button>
+    </div>
+  </form>
+  <aside class="side">
+    <img src="assets/img/int-evening-s.webp" alt="Вечерний зал МАСЛО" loading="lazy" width="640" height="425" data-rv="1">
+    <div class="blk" data-rv="2"><h3>Позвонить</h3><p><a class="big" href="tel:+79000000000">+7 900 000-00-00</a></p><p>Каждый день с 9 до 23</p></div>
+    <div class="blk" data-rv="3"><h3>Большой компанией</h3><p>От десяти человек соберём отдельный стол и меню. Напишите на hello@maslo.example</p></div>
+    <div class="blk" data-rv="4"><h3>Без брони</h3><p>Половину столов держим для тех, кто зашёл с улицы. Утром стол найдётся почти всегда.</p></div>
+  </aside>
+</div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><a class="logo" href="index.html">МАСЛ<b>О</b></a><p class="muted">Городские бистро на хорошем масле.<br>Одно меню, четыре кухни.</p></div>
+      <div><h4>Сайт</h4><ul><li><a href="menu.html">Меню</a></li><li><a href="places.html">Точки</a></li><li><a href="story.html">История</a></li><li><a href="bron.html">Бронь</a></li></ul></div>
+      <div><h4>Точки</h4><ul><li>Садовая, 4</li><li>Липовая, 12</li><li>Набережная, 31</li><li>Литейный пер., 7</li></ul></div>
+      <div><h4>Связь</h4><ul><li><a href="tel:+79000000000">+7 900 000-00-00</a></li><li><a href="mailto:hello@maslo.example">hello@maslo.example</a></li><li>Каждый день с 9 до 23</li></ul></div>
+    </div>
+    <div class="ftr-note"><span>Демонстрационный проект, бренд вымышлен. Меню, цены, адреса и контакты условны.</span><span>© МАСЛО, 2026</span></div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Быстрые действия"><a href="places.html">Точки</a><a class="go" href="bron.html">Забронировать</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Точки · МАСЛО</title>
+<meta name="description" content="Четыре бистро МАСЛО по городу. Адреса, часы и характер каждой точки.">
+<meta name="theme-color" content="#F7EFE3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D98A2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F7EFE3' font-family='Georgia'%3EМ%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/OrelegaOne-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="has-mbar">
+
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="МАСЛО, на главную">МАСЛ<b>О</b></a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  </nav>
+  <a class="btn" href="bron.html">Забронировать стол</a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+</header>
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  <p class="muted">Каждый день с 9 до 23 · +7 900 000-00-00</p>
+</nav>
+
+<main>
+<section class="page-head">
+  <div class="wrap ph-row">
+    <div><p class="kicker" data-rv>Четыре кухни по городу</p><h1 class="d1" data-rv="1">Точки</h1></div>
+    <p class="lead" data-rv="2">Меню везде одно, а характер у каждой свой. Выбирайте по настроению.</p>
+  </div>
+</section>
+<div class="wrap">
+  <article class="place" id="sadovaya">
+    <div class="place-media" data-rv>
+      <img class="k-poster" src="assets/img/kitchen-poster.webp" alt="" aria-hidden="true" style="position:absolute;inset:0">
+      <video muted playsinline loop preload="none" data-loop data-src="assets/video/kitchen-loop.mp4" data-src-m="assets/video/kitchen-loop-m.mp4" aria-label="Огонь на кухне Садовой" style="position:relative"></video>
+      <span class="badge">Кухня сейчас</span>
+    </div>
+    <div>
+      <span class="num" data-rv>01</span>
+      <h2 class="d2" data-rv="1">Садовая</h2>
+      <p data-rv="2">Первая и самая жаркая. Своя печь и кухня во весь зал. Здесь печём хлеб для всех точек.</p>
+      <dl data-rv="3"><dt>Адрес</dt><dd>Садовая, 4</dd><dt>Часы</dt><dd>каждый день с 9 до 23</dd><dt>Мест</dt><dd>64, есть стол на 12</dd></dl>
+      <div class="map" style="--x:38%;--y:44%" aria-hidden="true"></div>
+      <a class="btn" href="bron.html?place=sadovaya">Стол на Садовой</a>
+    </div>
+  </article>
+  <article class="place" id="lipovaya">
+    <div class="place-media" data-rv><img src="assets/img/int-courtyard.webp" alt="Зал с распахнутыми дверями во двор с зеленью" loading="lazy" width="1800" height="1195"></div>
+    <div>
+      <span class="num" data-rv>02</span>
+      <h2 class="d2" data-rv="1">Липовая</h2>
+      <p data-rv="2">Тихий двор с липами и виноградом. С мая по октябрь столы стоят во дворе, а в прохладные вечера выдаём пледы.</p>
+      <dl data-rv="3"><dt>Адрес</dt><dd>Липовая, 12, во дворе</dd><dt>Часы</dt><dd>каждый день с 9 до 23</dd><dt>Мест</dt><dd>40 в зале, 30 во дворе</dd></dl>
+      <div class="map" style="--x:64%;--y:30%" aria-hidden="true"></div>
+      <a class="btn" href="bron.html?place=lipovaya">Стол на Липовой</a>
+    </div>
+  </article>
+  <article class="place" id="naberezhnaya">
+    <div class="place-media" data-rv><img src="assets/img/int-morning.webp" alt="Светлый утренний зал с большими окнами" loading="lazy" width="1800" height="1195"></div>
+    <div>
+      <span class="num" data-rv>03</span>
+      <h2 class="d2" data-rv="1">Набережная</h2>
+      <p data-rv="2">Самые большие окна и самые долгие завтраки. Утром здесь работают с ноутбуками, к обеду приходят семьями.</p>
+      <dl data-rv="3"><dt>Адрес</dt><dd>Набережная, 31</dd><dt>Часы</dt><dd>каждый день с 9 до 23</dd><dt>Мест</dt><dd>52, детский уголок</dd></dl>
+      <div class="map" style="--x:24%;--y:62%" aria-hidden="true"></div>
+      <a class="btn" href="bron.html?place=naberezhnaya">Стол на Набережной</a>
+    </div>
+  </article>
+  <article class="place" id="liteyny">
+    <div class="place-media" data-rv><img src="assets/img/int-evening.webp" alt="Вечерний зал со свечами и длинной барной стойкой" loading="lazy" width="1800" height="1195"></div>
+    <div>
+      <span class="num" data-rv>04</span>
+      <h2 class="d2" data-rv="1">Литейный</h2>
+      <p data-rv="2">Днём здесь спокойно, а вечером зажигаем свечи. Длинный бар, вино к горячему.</p>
+      <dl data-rv="3"><dt>Адрес</dt><dd>Литейный пер., 7</dd><dt>Часы</dt><dd>каждый день с 9 до 23</dd><dt>Мест</dt><dd>46 в зале, 14 у бара</dd></dl>
+      <div class="map" style="--x:72%;--y:56%" aria-hidden="true"></div>
+      <a class="btn" href="bron.html?place=liteyny">Стол на Литейном</a>
+    </div>
+  </article>
+</div>
+<section class="cta">
+  <div class="wrap">
+    <h2 class="d1" data-rv>Не можете<br>определиться?</h2>
+    <div data-rv="1"><p>Позвоните, подскажем, какая точка вам подойдёт.</p><a class="btn" href="tel:+79000000000">+7 900 000-00-00</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><a class="logo" href="index.html">МАСЛ<b>О</b></a><p class="muted">Городские бистро на хорошем масле.<br>Одно меню, четыре кухни.</p></div>
+      <div><h4>Сайт</h4><ul><li><a href="menu.html">Меню</a></li><li><a href="places.html">Точки</a></li><li><a href="story.html">История</a></li><li><a href="bron.html">Бронь</a></li></ul></div>
+      <div><h4>Точки</h4><ul><li>Садовая, 4</li><li>Липовая, 12</li><li>Набережная, 31</li><li>Литейный пер., 7</li></ul></div>
+      <div><h4>Связь</h4><ul><li><a href="tel:+79000000000">+7 900 000-00-00</a></li><li><a href="mailto:hello@maslo.example">hello@maslo.example</a></li><li>Каждый день с 9 до 23</li></ul></div>
+    </div>
+    <div class="ftr-note"><span>Демонстрационный проект, бренд вымышлен. Меню, цены, адреса и контакты условны.</span><span>© МАСЛО, 2026</span></div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Быстрые действия"><a href="places.html">Точки</a><a class="go" href="bron.html">Забронировать</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

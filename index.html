@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>МАСЛО · городские бистро</title>
+<meta name="description" content="МАСЛО. Сеть городских бистро, где всё готовят на хорошем масле. Открытая кухня, одно меню на четыре точки.">
+<meta name="theme-color" content="#F7EFE3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D98A2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F7EFE3' font-family='Georgia'%3EМ%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/OrelegaOne-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-poster.webp" media="(min-width:768px)">
+<link rel="preload" as="image" href="assets/img/hero-poster-m.webp" media="(max-width:767px)">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="has-mbar">
+
+<header class="hdr on-dark">
+  <a class="logo" href="index.html" aria-label="МАСЛО, на главную">МАСЛ<b>О</b></a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  </nav>
+  <a class="btn" href="bron.html">Забронировать стол</a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+</header>
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  <p class="muted">Каждый день с 9 до 23 · +7 900 000-00-00</p>
+</nav>
+
+<main>
+<section class="hero" aria-label="МАСЛО">
+  <div class="hero-pin">
+    <picture>
+      <source media="(max-width:767px)" srcset="assets/img/hero-poster-m.webp">
+      <img class="hero-poster" src="assets/img/hero-poster.webp" alt="Чугунная сковорода, в ней тает кусок сливочного масла с травами" fetchpriority="high">
+    </picture>
+    <video id="heroVideo" muted playsinline preload="auto" aria-hidden="true"
+      data-src="assets/video/hero-scrub.mp4" data-src-m="assets/video/hero-scrub-m.mp4"></video>
+    <div class="hero-txt">
+      <h1 class="d1">МАСЛ<b>О</b></h1>
+      <div class="hero-steps" aria-live="off">
+        <p>Сначала кусок сливочного.</p>
+        <p>Потом жар и шалфей.</p>
+        <p>И вот ваша тарелка.</p>
+      </div>
+      <div class="hero-meta"><span>Четыре точки по городу</span><span>Открытая кухня</span><span>Каждый день с 9 до 23</span></div>
+    </div>
+    <div class="hero-bar" aria-hidden="true"><i></i></div>
+    <div class="scroll-hint" aria-hidden="true">листайте, масло тает</div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap philo">
+    <div class="philo-img" data-rv>
+      <img src="assets/img/bread-hands.webp" alt="Повар ломает горячий хлеб, рядом масло" loading="lazy" width="1040" height="1300">
+      <div class="oil" aria-hidden="true"></div>
+    </div>
+    <div class="philo-text">
+      <p class="kicker" data-rv>На масле вкуснее</p>
+      <h2 class="d2" data-rv="1">Мы не изобретаем еду. Мы <em>знаем, на чём её готовить</em>.</h2>
+      <p class="lead" data-rv="2" style="margin-top:28px">Сливочное для корочки, оливковое для овощей, топлёное для сырников. С хорошим маслом даже простое блюдо хочется заказать ещё раз.</p>
+      <p data-rv="3">Меню одно на все четыре точки и меняется с сезоном. Кухня открытая, и видно, кто готовит ваш ужин. Порции щедрые, хлеб свой, утром пахнет корицей.</p>
+      <a class="arrow" href="story.html" data-rv="4">Как всё начиналось</a>
+      <span class="hand" data-rv="5">масла не жалеем</span>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="marq-track">
+  <span>сырники весь день</span><i>✦</i><span>хлеб из своей печи</span><i>✦</i><span>форель на сливочном</span><i>✦</i><span>паста с шалфеем</span><i>✦</i><span>облепиховый чай</span><i>✦</i>
+  <span>сырники весь день</span><i>✦</i><span>хлеб из своей печи</span><i>✦</i><span>форель на сливочном</span><i>✦</i><span>паста с шалфеем</span><i>✦</i><span>облепиховый чай</span><i>✦</i>
+</div></div>
+
+<section class="plate-sec" aria-label="Как собирается тарелка">
+  <div class="plate-pin">
+    <div>
+      <p class="kicker">Сборка тарелки</p>
+      <div class="plate-steps">
+        <div class="plate-step on"><span class="num">01</span><h2 class="d2">Тёплая тарелка</h2><p>Греем заранее, чтобы пюре не остыло по пути к столу.</p></div>
+        <div class="plate-step"><span class="num">02</span><h2 class="d2">Пюре на сливочном</h2><p>Картофель, молоко и много масла. Взбиваем руками, без миксера.</p></div>
+        <div class="plate-step"><span class="num">03</span><h2 class="d2">Цыплёнок с корочкой</h2><p>Жарим кожей вниз на чугуне, пока не захрустит. Потом поливаем маслом с чесноком.</p></div>
+        <div class="plate-step"><span class="num">04</span><h2 class="d2">Шалфей и капля масла</h2><p>Хрустящие листья, зелень и капля тыквенного масла сверху. Готово.</p>
+          <div class="plate-price"><span class="price">690 ₽</span><a class="arrow" href="menu.html#hot">В меню</a></div></div>
+      </div>
+      <div class="plate-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="plate-stage" aria-hidden="true">
+      <img class="l-plate" src="assets/img/layer-plate.webp" alt="" loading="lazy" width="1000" height="1000">
+      <img class="l-puree" src="assets/img/layer-puree.webp" alt="" loading="lazy" width="1000" height="1000">
+      <img class="l-chicken" src="assets/img/layer-chicken.webp" alt="" loading="lazy" width="1000" height="1000">
+      <img class="l-herbs" src="assets/img/layer-herbs.webp" alt="" loading="lazy" width="1000" height="1000">
+      <div class="steam"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hits-head">
+      <div><p class="kicker" data-rv>Хиты</p><h2 class="d2" data-rv="1">То, за чем<br>возвращаются</h2></div>
+      <a class="arrow" href="menu.html" data-rv="2">Всё меню</a>
+    </div>
+    <div class="stack">
+      <article class="card">
+        <div class="card-img"><img src="assets/img/syrniki.webp" alt="Сырники со сметаной и ягодным вареньем" loading="lazy" width="1040" height="1300"></div>
+        <div class="card-body"><div><span class="card-tag">Завтрак весь день</span><h3 class="d2" style="margin-top:14px">Сырники на топлёном</h3></div>
+          <p class="muted">Пышные внутри, румяные снаружи. Сметана, варенье из чёрной смородины и кусочек масла сверху, чтобы таял.</p>
+          <div class="card-foot"><span class="price">420 ₽</span><a class="arrow" href="menu.html#breakfast">Завтраки</a></div></div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="assets/img/pasta.webp" alt="Тальятелле с шалфеем и пармезаном" loading="lazy" width="1040" height="1300"></div>
+        <div class="card-body"><div><span class="card-tag">Горячее</span><h3 class="d2" style="margin-top:14px">Паста с шалфеем</h3></div>
+          <p class="muted">Свежие тальятелле, коричневое масло с шалфеем, твёрдый сыр. Четыре ингредиента, лишних нет.</p>
+          <div class="card-foot"><span class="price">560 ₽</span><a class="arrow" href="menu.html#hot">Горячее</a></div></div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="assets/img/trout.webp" alt="Форель с лимоном в сливочном соусе" loading="lazy" width="1040" height="1300"></div>
+        <div class="card-body"><div><span class="card-tag">Горячее</span><h3 class="d2" style="margin-top:14px">Форель на сливочном</h3></div>
+          <p class="muted">Кожа хрустит, мясо тает. Соус из масла, лимона и укропа. Его собирают хлебом до последней капли.</p>
+          <div class="card-foot"><span class="price">780 ₽</span><a class="arrow" href="menu.html#hot">Горячее</a></div></div>
+      </article>
+      <article class="card">
+        <div class="card-img"><img src="assets/img/cake.webp" alt="Кусок пирога с солёной карамелью и сливками" loading="lazy" width="1040" height="1300"></div>
+        <div class="card-body"><div><span class="card-tag">Десерт</span><h3 class="d2" style="margin-top:14px">Пирог с солёной карамелью</h3></div>
+          <p class="muted">Печём каждое утро и подаём тёплым, со взбитыми сливками.</p>
+          <div class="card-foot"><span class="price">340 ₽</span><a class="arrow" href="menu.html#sweet">Десерты</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="kitchen" aria-label="Кухня">
+  <img class="k-poster" src="assets/img/kitchen-poster.webp" alt="" loading="lazy" aria-hidden="true">
+  <video muted playsinline loop preload="none" aria-hidden="true" data-loop
+    data-src="assets/video/kitchen-loop.mp4" data-src-m="assets/video/kitchen-loop-m.mp4"></video>
+  <div class="wrap">
+    <p class="kicker" data-rv>Открытая кухня</p>
+    <blockquote data-rv="1">Огонь видно из&nbsp;зала. Нам <em>нечего прятать</em>, кроме рецепта соуса.</blockquote>
+    <cite data-rv="2"><span class="hand">Данила, шеф</span></cite>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="ph-row">
+      <div><p class="kicker" data-rv>Точки</p><h2 class="d2" data-rv="1">Четыре кухни,<br>одно меню</h2></div>
+      <p class="lead" data-rv="2">Заходите в ближайшую. Сырники везде одинаково пышные.</p>
+    </div>
+    <div class="spots">
+      <a class="spot" href="places.html#sadovaya" data-rv><img src="assets/img/int-bakery-s.webp" alt="Пекарня с печью и длинными столами" loading="lazy" width="640" height="425"><div><h3>Садовая</h3><p>Садовая, 4 · пекарня и печь</p></div></a>
+      <a class="spot" href="places.html#lipovaya" data-rv="1"><img src="assets/img/int-courtyard-s.webp" alt="Зал с выходом в зелёный двор" loading="lazy" width="640" height="425"><div><h3>Липовая</h3><p>Липовая, 12 · летний двор</p></div></a>
+      <a class="spot" href="places.html#naberezhnaya" data-rv="2"><img src="assets/img/int-morning-s.webp" alt="Светлый зал утром" loading="lazy" width="640" height="425"><div><h3>Набережная</h3><p>Набережная, 31 · завтраки у окна</p></div></a>
+      <a class="spot" href="places.html#liteyny" data-rv="3"><img src="assets/img/int-evening-s.webp" alt="Вечерний зал со свечами и баром" loading="lazy" width="640" height="425"><div><h3>Литейный</h3><p>Литейный пер., 7 · свечи и бар</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="d1" data-rv>Стол<br>на&nbsp;вечер?</h2>
+    <div data-rv="1">
+      <p>Оставьте имя и телефон, перезвоним за десять минут. По пятницам лучше заранее.</p>
+      <a class="btn" href="bron.html">Забронировать стол</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><a class="logo" href="index.html">МАСЛ<b>О</b></a><p class="muted">Городские бистро на хорошем масле.<br>Одно меню, четыре кухни.</p></div>
+      <div><h4>Сайт</h4><ul><li><a href="menu.html">Меню</a></li><li><a href="places.html">Точки</a></li><li><a href="story.html">История</a></li><li><a href="bron.html">Бронь</a></li></ul></div>
+      <div><h4>Точки</h4><ul><li>Садовая, 4</li><li>Липовая, 12</li><li>Набережная, 31</li><li>Литейный пер., 7</li></ul></div>
+      <div><h4>Связь</h4><ul><li><a href="tel:+79000000000">+7 900 000-00-00</a></li><li><a href="mailto:hello@maslo.example">hello@maslo.example</a></li><li>Каждый день с 9 до 23</li></ul></div>
+    </div>
+    <div class="ftr-note"><span>Демонстрационный проект, бренд вымышлен. Меню, цены, адреса и контакты условны.</span><span>© МАСЛО, 2026</span></div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Быстрые действия"><a href="places.html">Точки</a><a class="go" href="bron.html">Забронировать</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Меню · МАСЛО</title>
+<meta name="description" content="Меню МАСЛО. Завтраки весь день, горячее на чугуне, салаты, хлеб из своей печи и десерты.">
+<meta name="theme-color" content="#F7EFE3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23D98A2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F7EFE3' font-family='Georgia'%3EМ%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/OrelegaOne-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="has-mbar">
+
+<header class="hdr">
+  <a class="logo" href="index.html" aria-label="МАСЛО, на главную">МАСЛ<b>О</b></a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  </nav>
+  <a class="btn" href="bron.html">Забронировать стол</a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+</header>
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <a href="index.html">Главная</a><a href="menu.html">Меню</a><a href="places.html">Точки</a><a href="story.html">История</a><a href="bron.html">Бронь</a>
+  <p class="muted">Каждый день с 9 до 23 · +7 900 000-00-00</p>
+</nav>
+
+<main>
+<section class="page-head">
+  <div class="wrap ph-row">
+    <div><p class="kicker" data-rv>Одно меню на четыре точки</p><h1 class="d1" data-rv="1">Меню</h1></div>
+    <div class="ph-side"><p class="lead" data-rv="2">Простая еда на хорошем масле. Наведите на блюдо, и покажем, как оно выглядит.</p><div class="ph-img" data-rv="3"><img src="assets/img/syrniki-s.webp" alt="Сырники со сметаной" width="640" height="800"></div></div>
+  </div>
+</section>
+<nav class="tabs" aria-label="Разделы меню"><div class="wrap">
+  <a href="#breakfast" class="on">Завтраки</a><a href="#hot">Горячее</a><a href="#cold">Закуски и салаты</a><a href="#sweet">Хлеб и десерты</a><a href="#drinks">Напитки</a>
+</div></nav>
+<div class="wrap">
+  <section class="mcat" id="breakfast">
+    <div class="mcat-head"><h2 class="d2" data-rv>Завтраки</h2><p data-rv="1">Весь день. Сырники в шесть вечера никто не запрещал.</p></div>
+    <ul class="mlist">
+      <li class="mi" data-img="assets/img/syrniki-s.webp"><img class="mi-thumb" src="assets/img/syrniki-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Сырники на топлёном</h3><span class="price">420 ₽</span><p class="mi-desc">Сметана, варенье из чёрной смородины, кусочек масла сверху <span class="mi-tag">хит</span></p></li>
+      <li class="mi" data-img="assets/img/eggs-s.webp"><img class="mi-thumb" src="assets/img/eggs-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Яичница на чугуне</h3><span class="price">380 ₽</span><p class="mi-desc">Два яйца, тосты из своего хлеба, зелёное масло с травами </p></li>
+      <li class="mi" data-img="assets/img/bread-s.webp"><img class="mi-thumb" src="assets/img/bread-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Хлеб с маслом и редиской</h3><span class="price">290 ₽</span><p class="mi-desc">Толстый ломоть хлеба на закваске, взбитое масло, редиска, соль </p></li>
+      <li class="mi" data-img="assets/img/kasha-s.webp"><img class="mi-thumb" src="assets/img/kasha-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Каша на молоке</h3><span class="price">260 ₽</span><p class="mi-desc">Пшённая, с тыквой и ложкой топлёного масла </p></li>
+      <li class="mi" data-img="assets/img/omelette-s.webp"><img class="mi-thumb" src="assets/img/omelette-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Омлет с зеленью</h3><span class="price">360 ₽</span><p class="mi-desc">Пышный, на сливочном, с укропом и козьим сыром </p></li>
+    </ul>
+  </section>
+  <section class="mcat" id="hot">
+    <div class="mcat-head"><h2 class="d2" data-rv>Горячее</h2><p data-rv="1">Жарим на чугуне, поливаем маслом с чесноком. Всё, что шипит, отсюда.</p></div>
+    <ul class="mlist">
+      <li class="mi" data-img="assets/img/chicken-s.webp"><img class="mi-thumb" src="assets/img/chicken-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Цыплёнок с пюре</h3><span class="price">690 ₽</span><p class="mi-desc">Корочка, пюре на сливочном, хрустящий шалфей <span class="mi-tag">хит</span></p></li>
+      <li class="mi" data-img="assets/img/pasta-s.webp"><img class="mi-thumb" src="assets/img/pasta-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Паста с шалфеем</h3><span class="price">560 ₽</span><p class="mi-desc">Свежие тальятелле, коричневое масло, твёрдый сыр </p></li>
+      <li class="mi" data-img="assets/img/trout-s.webp"><img class="mi-thumb" src="assets/img/trout-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Форель на сливочном</h3><span class="price">780 ₽</span><p class="mi-desc">Лимон, укроп, соус, который собирают хлебом </p></li>
+      <li class="mi" data-img="assets/img/cutlet-s.webp"><img class="mi-thumb" src="assets/img/cutlet-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Говяжья котлета</h3><span class="price">640 ₽</span><p class="mi-desc">Рубленая вручную, печёный лук, картофель с травами </p></li>
+      <li class="mi" data-img="assets/img/veg-s.webp"><img class="mi-thumb" src="assets/img/veg-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Овощи из печи</h3><span class="price">450 ₽</span><p class="mi-desc">Тыква, свёкла, морковь, оливковое масло, мисо <span class="mi-tag">сезон</span></p></li>
+      <li class="mi" data-img="assets/img/soup-s.webp"><img class="mi-thumb" src="assets/img/soup-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Тыквенный суп</h3><span class="price">380 ₽</span><p class="mi-desc">Гладкий, с тыквенными семечками и сливками <span class="mi-tag">сезон</span></p></li>
+    </ul>
+  </section>
+  <section class="mcat" id="cold">
+    <div class="mcat-head"><h2 class="d2" data-rv>Закуски и салаты</h2><p data-rv="1">Сезонные, яркие, с хорошим оливковым. Овощи от двух фермеров.</p></div>
+    <ul class="mlist">
+      <li class="mi" data-img="assets/img/salad-s.webp"><img class="mi-thumb" src="assets/img/salad-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Салат со свёклой</h3><span class="price">490 ₽</span><p class="mi-desc">Печёная свёкла, рукола, козий сыр, грецкий орех <span class="mi-tag">сезон</span></p></li>
+      <li class="mi" data-img="assets/img/pate-s.webp"><img class="mi-thumb" src="assets/img/pate-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Паштет из печени</h3><span class="price">420 ₽</span><p class="mi-desc">Сливочный, с луковым джемом и тёплым хлебом </p></li>
+      <li class="mi" data-img="assets/img/cucumbers-s.webp"><img class="mi-thumb" src="assets/img/cucumbers-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Огурцы с мёдом и солью</h3><span class="price">250 ₽</span><p class="mi-desc">Хрустящие, с укропным маслом </p></li>
+    </ul>
+  </section>
+  <section class="mcat" id="sweet">
+    <div class="mcat-head"><h2 class="d2" data-rv>Хлеб и десерты</h2><p data-rv="1">Печём каждое утро в своей печи.</p></div>
+    <ul class="mlist">
+      <li class="mi" data-img="assets/img/cake-s.webp"><img class="mi-thumb" src="assets/img/cake-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Пирог с солёной карамелью</h3><span class="price">340 ₽</span><p class="mi-desc">Тёплый, со взбитыми сливками <span class="mi-tag">хит</span></p></li>
+      <li class="mi" data-img="assets/img/bread-hands-s.webp"><img class="mi-thumb" src="assets/img/bread-hands-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Хлеб на закваске</h3><span class="price">290 ₽</span><p class="mi-desc">Целая буханка с собой, с хрустящей коркой</p></li>
+      <li class="mi" data-img="assets/img/cinnamon-s.webp"><img class="mi-thumb" src="assets/img/cinnamon-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Булочка с корицей</h3><span class="price">190 ₽</span><p class="mi-desc">Масло, сахар, корица. Больше ничего не надо </p></li>
+      <li class="mi" data-img="assets/img/icecream-s.webp"><img class="mi-thumb" src="assets/img/icecream-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Мороженое с оливковым маслом</h3><span class="price">280 ₽</span><p class="mi-desc">Сливочное, с каплей оливкового и морской солью </p></li>
+    </ul>
+  </section>
+  <section class="mcat" id="drinks">
+    <div class="mcat-head"><h2 class="d2" data-rv>Напитки</h2><p data-rv="1">Чай завариваем в чайнике, кофе варим из свежей обжарки.</p></div>
+    <ul class="mlist">
+      <li class="mi" data-img="assets/img/tea-s.webp"><img class="mi-thumb" src="assets/img/tea-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Облепиховый чай</h3><span class="price">320 ₽</span><p class="mi-desc">Облепиха, тимьян, мёд. Греет даже в ноябре <span class="mi-tag">хит</span></p></li>
+      <li class="mi" data-img="assets/img/cappuccino-s.webp"><img class="mi-thumb" src="assets/img/cappuccino-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Капучино</h3><span class="price">230 ₽</span><p class="mi-desc">На цельном молоке или овсяном </p></li>
+      <li class="mi" data-img="assets/img/cocoa-s.webp"><img class="mi-thumb" src="assets/img/cocoa-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Какао на сливках</h3><span class="price">290 ₽</span><p class="mi-desc">Густое, с щепоткой соли </p></li>
+      <li class="mi" data-img="assets/img/mors-s.webp"><img class="mi-thumb" src="assets/img/mors-s.webp" alt="" loading="lazy" width="76" height="92"><h3 class="mi-name">Морс из смородины</h3><span class="price">210 ₽</span><p class="mi-desc">Варим сами, не приторный </p></li>
+    </ul>
+  </section>
+  <p class="menu-note">Цены условные, проект демонстрационный. Про аллергены расскажет официант, состав блюд у нас короткий.</p>
+</div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><a class="logo" href="index.html">МАСЛ<b>О</b></a><p class="muted">Городские бистро на хорошем масле.<br>Одно меню, четыре кухни.</p></div>
+      <div><h4>Сайт</h4><ul><li><a href="menu.html">Меню</a></li><li><a href="places.html">Точки</a></li><li><a href="story.html">История</a></li><li><a href="bron.html">Бронь</a></li></ul></div>
+      <div><h4>Точки</h4><ul><li>Садовая, 4</li><li>Липовая, 12</li><li>Набережная, 31</li><li>Литейный пер., 7</li></ul></div>
+      <div><h4>Связь</h4><ul><li><a href="tel:+79000000000">+7 900 000-00-00</a></li><li><a href="mailto:hello@maslo.example">hello@maslo.example</a></li><li>Каждый день с 9 до 23</li></ul></div>
+    </div>
+    <div class="ftr-note"><span>Демонстрационный проект, бренд вымышлен. Меню, цены, адреса и контакты условны.</span><span>© МАСЛО, 2026</span></div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Быстрые действия"><a href="places.html">Точки</a><a class="go" href="bron.html">Забронировать</a></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
