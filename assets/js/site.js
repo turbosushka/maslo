@@ -13,7 +13,7 @@
   /* ---------- активный пункт меню ---------- */
   safe("nav", function(){
     var page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-    if(page.indexOf(".") < 0) page = "index.html";
+    if(page.indexOf(".") < 0) page += ".html";  // /raboty/maslo/menu отдаётся как menu.html (Caddy try_files), аудит 29.10
     $$(".nav a, .drawer a, .mbar a").forEach(function(a){
       var h = (a.getAttribute("href") || "").split("#")[0].toLowerCase();
       if(h === page) a.setAttribute("aria-current", "page");
